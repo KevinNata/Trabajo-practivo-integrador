@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contenedor">
+
+
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#" style="color:white"><img id="logo" src="codoacodo.png">Conf Bs As</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> <i class="bi bi-list"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="listadoNavegacion">
+                      <li class="nav-item">
+                        <a class="nav-link"  href="#" >La conferencia</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link active"  aria-current="page" href="#">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  href="#">El lugar y la fecha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:white">Conviertete en orador</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" style="color:rgba(0,255,0,0.8)">Comprar tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+        </header>
+
+        <main>
+            <div id="mainContenedor">
+                <div class="planesDto" id="estudiante">
+                    <h3>Estudiante</h3>
+                    <span>Tienen un descuento de</span>
+                    <p style="margin:10px"><b>80%</b> </p>
+                    <span style="font-weight: 200;">*presentando documentación</span>  
+                </div>
+                <div class="planesDto" id="trainee">
+                    <h3>Trainee</h3>
+                    <span>Tienen un descuento de</span>
+                    <p style="margin:10px"><b>50%</b> </p>
+                    <span style="font-weight: 200;">*presentando documentación</span>  
+                </div>
+                <div class="planesDto" id="junior">
+                    <h3>Junior</h3>
+                    <span>Tienen un descuento de</span>
+                    <p style="margin:10px"><b>15%</b> </p>
+                    <span style="font-weight: 200;">*presentando documentación</span>  
+
+                </div>
+
+                <p style="margin:7px" >VENTA</p>
+                <h2 style="margin:10px">VALOR DE TICKET $200</h2>
+
+                <form action="POST" enctype="multipart/form-data">
+                    <input type="text" class="nombreYapellido"  id="formNombre" placeholder="Nombre">
+                    <input type="text" class="nombreYapellido" id="formApellido" placeholder="Apellido">
+                    <input type="email" id="formEmail" placeholder="Correo">
+                    <div class="cantidadYcategoria">
+                        <label  for="cantidad"> Cantidad </label>
+
+                        <input type="number" id="formCantidad" name="cantidad" placeholder="Cantidad">
+                    </div>   
+                    <div class="cantidadYcategoria">
+                        <label  for="categoria"> Categoría </label>
+                        <select name="categoria" id="formCategoria">
+                            <option value="estudiante">Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select> 
+                     </div>
+
+                     <div id="totalApagar"></div>
+                    
+                     <button class="botones" id="botonBorrar" type="reset"> Borrar </button>
+
+                     <button class="botones" id="botonResumen"> Resumen </button>
+
+
+                </form>
+
+            </div>
+
+        </main>
+
+    <footer>
+        <nav id="footerContenedor">
+            <ul>
+               <li> <a href="#">Preguntas frecuentes</a> </li>
+               <li>  <a href="#">Contáctanos</a> </li>
+                <li>  <a href="#">Prensa</a> </li>
+                <li>  <a href="#">Conferencias</a> </li>
+                <li> <a href="#">Términos y condiciones</a> </li>
+                <li>  <a href="#">Privacidad</a> </li>
+                <li>  <a href="#">Estudiantes</a> </li>
+            </ul>
+        </nav>
+    </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

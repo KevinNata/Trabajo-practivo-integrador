@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Nav-Bar */
+
+#logo{
+    width:90px;
+    height:50px;
+}
+
+
+.navbar{
+    background: rgba(31, 30, 30, 0.8);
+    
+}
+
+.navbar a{  
+color: rgba(255,255,255,0.4);
+
+}
+
+.bi {
+    color: white;
+    font-size:30px;
+    margin: 1px;
+}
+
+@media (min-width:1000px){
+    #navbarNav{
+        display:inline-block;
+        position: absolute;
+        right: 0;
+        margin-right: 8%;
+        font-size:16px;
+    }
+}
+
+/* Fin de  Nav-Bar */
+
+
+
+/* Inicio de Main */
+
+#mainContenedor{
+    width:70%;
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
+.planesDto{
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+#estudiante{
+    border: 2px solid blue;
+}
+
+#trainee{
+    border: 2px solid green;
+}
+
+#junior{
+    border: 2px solid rgb(238, 197, 15);
+}
+
+
+@media (max-width:720px){
+    
+    .planesDto{
+        width:100%;
+        max-width:350px;
+        margin: 0 auto;
+        display: block;
+        
+    }
+    .planesDto h3{
+        font-size:20px;
+    }
+    .planesDto span,p{
+        font-size:15px;
+    }
+}
+
+form{
+    width:96%;
+    
+    margin: 0 auto;
+}
+
+.nombreYapellido{
+    width: 49.4%;
+    max-width:500px;
+    display: inline-block;
+    margin:1px;
+    border-radius: 3px;
+    border: 1px solid rgba(204, 200, 200, 0.9);
+}
+
+#formEmail{
+    width:100%;
+    max-width:500px;
+    margin:5px auto;
+    border: 1px solid rgba(204, 200, 200, 0.9);
+    border-radius: 3px;
+    max-width: 1010px;
+}
+
+.cantidadYcategoria{
+
+    text-align: left;
+    display: inline-block;
+    width: 49.4%;
+    max-width:500px;
+    margin: 10px auto;
+    
+}
+
+#formCantidad{
+    width:100%; 
+    border: 1px solid rgba(204, 200, 200, 0.9);
+    border-radius: 3px;  
+}
+
+#formCategoria{
+    width:100%; 
+    border: 1px solid rgba(204, 200, 200, 0.9);
+    border-radius: 3px;
+    height:29px;
+
+}
+
+.cantidadYcategoria label,input,select{
+    display: block;
+    margin: 2px;
+}
+
+#totalApagar{
+    width:100%;
+    max-width:1010px;
+    margin: 15px auto;
+    background: rgb(204, 229, 255);
+    border-radius: 3px;
+    text-align: left;
+    padding: 15px;
+    
+}
+
+.botones{
+    width: 49.4%;
+    max-width:500px;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    background: rgba(151, 201, 62);
+    color: white;
+}
+
+
+
+@media (max-width:1000px){
+
+   
+    .nombreYapellido{
+        display:block;
+        margin: 5px auto;
+
+    }
+
+    .cantidadYcategoria{
+        display: block;
+    }
+
+    #formEmail{
+        width:49.4%;
+        display:block;
+        margin:0 auto;
+    }
+
+    #totalApagar{
+        width:49.4%;
+        display:block;
+        margin:0 auto;
+    }
+
+    .botones{
+        display:block;
+        margin: 5px auto;
+    }
+    
+}
+
+#footerContenedor{
+    width: 100%;
+    background: rgba(37,58,70);
+    position: fixed;
+    bottom: 0;
+}
+
+#footerContenedor ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#footerContenedor ul li{
+    padding:25px;
+    display:inline-block
+}
+#footerContenedor a{
+    color: rgba(255,255,255,.9);
+    text-decoration: none;
+    font-size:15px;
+    margin: 0 auto;
+    
+}
+
+@media (max-width:1030px){
+
+    #footerContenedor{
+        margin-top:50px;
+        width: 100%;
+        background: rgba(37,58,70);
+        position: static;
+        bottom: 0;
+    }
+    
+    #footerContenedor ul{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #footerContenedor ul li{
+        padding:15px;
+        display:inline-block
+    }
+    #footerContenedor a{
+        
+        font-size:13px;
+        margin: 0 auto;
+        
+    }
+
+}
